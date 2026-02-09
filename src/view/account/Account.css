@@ -1,0 +1,275 @@
+.UserInfoTable {
+    width: 100%;
+    max-width: 1000px;
+    margin: 5px auto;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.UserInfoTable th,
+.UserInfoTable tr,
+.UserInfoTable td {
+    padding: 12px;
+    border-bottom: 1px solid #d9d9d9;
+    text-align: left;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.UserInfoTable tr:hover {
+    background-color: #edecec;
+}
+
+.choice {
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.select-number {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 57px;
+}
+
+.UserInfoTable th {
+    font-weight: normal;
+    background-color: #6678db;
+    color: #fff;
+    cursor: pointer;
+    min-width: 110px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.UserInfoTable th:hover {
+    background-color: #5a68b9;
+}
+
+.UserInfoTable td:first-child {
+    font-weight: bold;
+}
+
+.UserInfoTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.UserInfoTable tbody tr:hover {
+    background-color: #ddd;
+}
+
+.search-icon {
+    position: absolute;
+    font-size: 19px;
+    left: auto;
+    margin-left: 12px;
+    margin-top: 12px;
+    color: #000000;
+}
+
+.search-field {
+    margin-bottom: 10px;
+    padding: 12px;
+    padding-left: 41px;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    font-size: 15px;
+    width: 690px
+}
+
+.pagination {
+    list-style: none;
+    padding: 10;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.pagination li {
+    cursor: pointer;
+    user-select: none;
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+    margin: 0 5px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease-in-out;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pagination-icon {
+    position: absolute;
+    margin-top: 2px;
+}
+
+.pagination-icon.double {
+    margin-left: -8px;
+}
+
+.pagination-icon.single {
+    margin-left: -5px
+}
+
+.pagination li.active {
+    background-color: #6678db;
+    color: #fff;
+}
+
+.pagination li:hover {
+    background-color: #e5e5e5;
+    color: #4b4b4b;
+}
+
+.sort-icon {
+    margin-left: 1px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.sort-asc .sort-icon {
+    transform: rotate(180deg);
+}
+
+.edit-btn {
+    background-color: #6678db;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.edit-btn.big {
+    margin-left: 5px;
+    padding: 10px;
+}
+
+.edit-btn:hover {
+    background-color: #3648ab;
+}
+
+.confirm-btn {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-top: -1px;
+    transition: background-color 0.3s ease-in-out;
+    border: 2px solid #95ccb6;
+    background-color: #d4edda;
+    color: #2a6f52;
+}
+
+.cancel-btn {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-top: -1px;
+    transition: background-color 0.3s ease-in-out;
+    border: 2px solid #cc9595;
+    background-color: #edd4d4;
+    color: #6f2a2a;
+}
+
+.confirm-btn:hover {
+    background-color: #95ccb6;
+}
+
+.cancel-btn:hover {
+    background-color: #cc9595;
+}
+
+.edit-icon {
+    font-size: 16px;
+}
+
+.action-container {
+    display: flex;
+}
+
+.changing-container{
+    margin-top: 15px;
+}
+
+.change-input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.error-input {
+    border: 1px solid rgb(255, 117, 117);
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.error-input::placeholder {
+    color: rgb(255, 117, 117);
+}
+
+
+
+.LoggedInfoTable {
+    width: 20%;
+    max-width: 400px;
+    min-width: 300px;
+    margin: auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.LoggedInfoTable td {
+    padding: 10px;
+    text-align: left;
+}
+
+.LoggedInfoTable td:first-child {
+    background-color: #6678db;
+    color: #fff;
+}
+
+.LoggedInfoTable td:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.LoggedInfoTable .icon {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.logout-btn {
+    background-color: #000000; 
+    color: white;  
+    padding: 10px; 
+    border: #000000;
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    align-items: center; 
+    width: 100%;
+    max-width: 100px;
+  }
+  
+  .logout-btn:hover {
+    background-color: #3e3e3e;
+  }
+  
+  .logout-btn .icon {
+    margin-right: 5px;
+  }
+
+  .current-user{
+    font-family: "Poppins";
+  }

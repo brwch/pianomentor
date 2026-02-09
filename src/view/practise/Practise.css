@@ -1,0 +1,62 @@
+.Practise {
+  text-align: center;
+  padding: 10px;
+}
+
+.exercise-flex {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  justify-content:center;
+}
+
+.exercise-tile {
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out,  background-color 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.02);
+    background-color:#fafafa;
+  }
+
+  .progress-bar {
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .exercise-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .exercise-description {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .exercise-difficulty {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+
+  .exercise-icon {
+    margin-bottom: 10px;
+  }
+
+  .exercise-progress {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+}
